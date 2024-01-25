@@ -17,8 +17,8 @@ def api_call(identifier, url, payload):
 
 	r_session = requests.Session()
 
-	user = "python.testuser@relay42.com"
-	password = "8D7UCMfn%EIy4@l!2tmCOfJw"
+	user = ""
+	password = ""
 	headers = {
 		"Content-Type": "application/json",
 		"accept": "*/*"
