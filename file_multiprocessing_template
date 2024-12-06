@@ -1,4 +1,4 @@
-# custom exports for equiti
+# custom exports
 import pandas as pd
 import csv
 import sys
@@ -12,7 +12,7 @@ def load_mapping_table(file_path):
     return df.set_index(df.columns[0])  # Set first column as the index
 
 # pd dataframe
-df = load_mapping_table('equiti_mapping_table.csv')
+df = load_mapping_table('mapping_table.csv')
 
 # get rid of duplicates
 df = df.reset_index().drop_duplicates(subset='trackId').set_index('trackId')
